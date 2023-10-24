@@ -1,8 +1,8 @@
 ---
-
+import NavBar from '../layouts/NavBar.astro'
 ---
 
-<html lang="en">
+<html lang="ar">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -10,7 +10,8 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body dir="rtl" class="bg-backGround bg-opacity-40">
+		<NavBar/>
+		<h1 class="h-screen">Astro</h1>
 	</body>
 </html>
