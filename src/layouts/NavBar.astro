@@ -13,15 +13,16 @@ const pathname = new URL(Astro.request.url).pathname;
     <ul class="flex gap-6 text-disabledText items-center">
       <NavBarIem
         client:load
-        link="/"
+        link="/home"
         text="الرئيسية"
         currentLocation={pathname}
       />
       <DropDownList
         client:load
         options={["1", "2", "3"]}
-        link="/donation"
+        link="/"
         currentLocation={pathname}
+        defaultText="تبرع الآن"
       />
       <NavBarIem
         client:load

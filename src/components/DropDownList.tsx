@@ -4,12 +4,14 @@ interface DropdownProps {
   options: string[];
   link: string;
   currentLocation: string;
+  defaultText:string
 }
 
 const DropdownList: React.FC<DropdownProps> = ({
   options,
   link,
   currentLocation,
+  defaultText
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
@@ -51,7 +53,7 @@ const DropdownList: React.FC<DropdownProps> = ({
     >
       <div className="flex gap-4 items-center">
         <p>
-          تبرع الآن : <strong>{selectedOption || "من داخل الجزائر"}</strong>
+          {defaultText} : <strong>{selectedOption || "من داخل الجزائر"}</strong>
         </p>
         <div
           className={`transition-all duration-200 ${isOpen && "rotate-180"}`}
