@@ -1,7 +1,9 @@
 import { Twirl as Hamburger } from "hamburger-react";
-import { useState } from "react";
-
-const NavMenu = ({ children }) => {
+import { useState,ReactNode  } from "react";
+interface NavMenuProps {
+  children: ReactNode;
+}
+const NavMenu: React.FC<NavMenuProps> = ({ children }) => {
   const [isOpen, setOpen] = useState<boolean>(false);
 
   return (
