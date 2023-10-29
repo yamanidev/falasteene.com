@@ -14,7 +14,7 @@ const NavBarItem: React.FC<NavBarItemProps> = ({
   return (
     <a
       href={link}
-      className={`hover:text-mainText hover:cursor-pointer rounded-md px-4 py-2  transition-all duration-500 hover:bg-backGround hover:bg-opacity-50 hover:text-opacity-70  ${
+      className={`hover:text-mainText text-base lg:text-sm xl:text-base hover:cursor-pointer rounded-md px-2 xl:px-4 py-4 lg:py-2  transition-all duration-500 hover:bg-backGround hover:bg-opacity-50 hover:text-opacity-70  ${
         link == currentLocation && "bg-backGround text-mainText"
       }`}
     >

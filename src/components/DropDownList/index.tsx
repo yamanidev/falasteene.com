@@ -4,18 +4,18 @@ interface DropdownProps {
   options: string[];
   link: string;
   currentLocation: string;
-  defaultText:string
+  defaultText: string;
 }
 
 const DropdownList: React.FC<DropdownProps> = ({
   options,
   link,
   currentLocation,
-  defaultText
+  defaultText,
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
-  const dropdownRef = useRef(null);
+  const dropdownRef = useRef<any>(null);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -25,13 +25,18 @@ const DropdownList: React.FC<DropdownProps> = ({
     setSelectedOption(option);
     setIsOpen(false);
   };
+  
   const handleClickOutside = (event: Event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target as Node)
+    ) {
       setIsOpen(false);
     }
   };
 
   useEffect(() => {
+    
     if (isOpen) {
       window.addEventListener("click", handleClickOutside);
     } else {
@@ -47,11 +52,11 @@ const DropdownList: React.FC<DropdownProps> = ({
     <div
       ref={dropdownRef}
       onClick={toggleDropdown}
-      className={`relative hover:fill-mainText fill-disabledText hover:text-mainText hover:cursor-pointer rounded-md px-4 py-2 transition-all duration-200 ease-in-out hover:bg-backGround hover:bg-opacity-50 hover:text-opacity-70 ${
-        link === currentLocation && "bg-backGround text-mainText"
+      className={`relative hover:fill-mainText text-base lg:text-sm xl:text-base fill-disabledText hover:text-mainText hover:cursor-pointer rounded-md px-4 py-4 lg:py-2 transition-all duration-200 ease-in-out hover:bg-backGround hover:bg-opacity-50 hover:text-opacity-70 ${
+        link === currentLocation && "bg-backGround text-mainText fill-mainText"
       }`}
     >
-      <div className="flex gap-4 items-center">
+      <div className="flex gap-4 items-center justify-center lg:justify-start">
         <p>
           {defaultText} : <strong>{selectedOption || "من داخل الجزائر"}</strong>
         </p>
@@ -69,12 +74,12 @@ const DropdownList: React.FC<DropdownProps> = ({
         </div>
       </div>
       {isOpen && (
-        <ul className="absolute top-12 bg-backGround w-full left-0 rounded-md flex flex-col">
+        <ul className=" lg:absolute lg:top-12 lg:bg-backGround w-full lg:left-0 rounded-md flex flex-col">
           {options.map((option, index) => (
             <li
               key={index}
               onClick={() => selectOption(option)}
-              className="font-bold px-4 rounded-md py-2 w-full hover:bg-gray-200"
+              className="font-bold mt-2 lg:mt-0 lg:px-4 rounded-md py-2 w-full hover:bg-gray-200"
             >
               {option}
             </li>
