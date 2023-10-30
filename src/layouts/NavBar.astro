@@ -1,0 +1,126 @@
+---
+import DropdownList from "../components/DropDownList";
+import NavBarItem from "../components/NavBarItem";
+import LangugeDropDown from "../components/LangugeDropDown";
+import NavMenu from "../components/NavMenu";
+const pathname = new URL(Astro.request.url).pathname;
+---
+
+<nav
+  class="bg-white text-black flex min-h-[72px] justify-between items-center py-3 px-12 sticky top-0 z-10"
+>
+  <button class="fixed top-0 right-0 lg:hidden">
+    <NavMenu client:load>
+      <NavBarItem
+        client:load
+        link="/home"
+        text="الرئيسية"
+        currentLocation={pathname}
+      />
+      <DropdownList
+        client:load
+        options={["1", "2", "3"]}
+        link="/"
+        currentLocation={pathname}
+        defaultText="تبرع الآن"
+      />
+      <NavBarItem
+        client:load
+        link="/about"
+        text="آخر الأحداث"
+        currentLocation={pathname}
+      />
+      <NavBarItem
+        client:load
+        link="/telegram"
+        text="قنوات تلغرام"
+        currentLocation={pathname}
+      />
+      <NavBarItem
+        client:load
+        link="/contact-us"
+        text="اتصل بنا"
+        currentLocation={pathname}
+      />
+      <div class="flex flex-col sm:hidden items-center gap-4 pb-8">
+        <div class="w-36">
+          <LangugeDropDown client:load />
+        </div>
+        <div class="h-[1.5px] w-[90%] bg-mainBlue"></div>
+        <div
+          class="bg-palestine-green flex px-6 py-3 rounded-md fill-white hover:fill-slate-200 text-white gap-4 items-center hover:cursor-pointer hover:bg-opacity-80 hover:text-opacity-80 transition-all duration-700"
+        >
+          <svg
+            width="21"
+            height="18"
+            viewBox="0 0 21 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.53698 10L6.32995 10.0009C5.91786 11.1656 4.80686 12 3.50098 12C1.84412 12 0.500977 10.6569 0.500977 9C0.500977 7.3431 1.84412 6 3.50098 6C4.80723 6 5.91849 6.83485 6.3303 8.0001L8.53698 8L12.001 2L15.1716 2.00009C15.5835 0.83485 16.6947 0 18.001 0C19.6578 0 21.001 1.34315 21.001 3C21.001 4.65685 19.6578 6 18.001 6C16.6951 6 15.5841 5.16562 15.172 4.0009L13.155 4L10.269 8.999L13.156 14L15.1716 14.0001C15.5835 12.8349 16.6947 12 18.001 12C19.6578 12 21.001 13.3431 21.001 15C21.001 16.6569 19.6578 18 18.001 18C16.6951 18 15.5841 17.1656 15.172 16.0009L12.001 16L8.53698 10ZM18.001 14C17.4487 14 17.001 14.4477 17.001 15C17.001 15.5523 17.4487 16 18.001 16C18.5533 16 19.001 15.5523 19.001 15C19.001 14.4477 18.5533 14 18.001 14ZM3.50098 8C2.94869 8 2.50098 8.4477 2.50098 9C2.50098 9.5523 2.94869 10 3.50098 10C4.05326 10 4.50098 9.5523 4.50098 9C4.50098 8.4477 4.05326 8 3.50098 8ZM18.001 2C17.4487 2 17.001 2.44772 17.001 3C17.001 3.55228 17.4487 4 18.001 4C18.5533 4 19.001 3.55228 19.001 3C19.001 2.44772 18.5533 2 18.001 2Z"
+            ></path>
+          </svg>
+          <p>شارك الموقع</p>
+        </div>
+      </div>
+    </NavMenu>
+  </button>
+  <div class="block lg:hidden mr-12">logo here</div>
+
+  <div class="hidden lg:flex gap-4 items-center">
+    <ul class="flex gap-4 text-disabledText items-center">
+      <div class="flex justify-self-end">Logo here</div>
+      <NavBarItem
+        client:load
+        link="/home"
+        text="الرئيسية"
+        currentLocation={pathname}
+      />
+      <DropdownList
+        client:load
+        options={["1", "2", "3"]}
+        link="/"
+        currentLocation={pathname}
+        defaultText="تبرع الآن"
+      />
+      <NavBarItem
+        client:load
+        link="/about"
+        text="آخر الأحداث"
+        currentLocation={pathname}
+      />
+      <NavBarItem
+        client:load
+        link="/telegram"
+        text="قنوات تلغرام"
+        currentLocation={pathname}
+      />
+      <NavBarItem
+        client:load
+        link="/contact-us"
+        text="اتصل بنا"
+        currentLocation={pathname}
+      />
+    </ul>
+  </div>
+
+  <ul class="hidden sm:flex gap-4 items-center">
+    <LangugeDropDown client:load />
+    <li class="h-6 w-[2px] bg-mainBlue"></li>
+    <button
+      class="bg-palestine-green flex px-6 py-3 rounded-md fill-white hover:fill-slate-200 text-white gap-4 items-center hover:cursor-pointer hover:bg-opacity-80 hover:text-opacity-80 transition-all duration-700"
+    >
+      <svg
+        width="21"
+        height="18"
+        viewBox="0 0 21 18"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8.53698 10L6.32995 10.0009C5.91786 11.1656 4.80686 12 3.50098 12C1.84412 12 0.500977 10.6569 0.500977 9C0.500977 7.3431 1.84412 6 3.50098 6C4.80723 6 5.91849 6.83485 6.3303 8.0001L8.53698 8L12.001 2L15.1716 2.00009C15.5835 0.83485 16.6947 0 18.001 0C19.6578 0 21.001 1.34315 21.001 3C21.001 4.65685 19.6578 6 18.001 6C16.6951 6 15.5841 5.16562 15.172 4.0009L13.155 4L10.269 8.999L13.156 14L15.1716 14.0001C15.5835 12.8349 16.6947 12 18.001 12C19.6578 12 21.001 13.3431 21.001 15C21.001 16.6569 19.6578 18 18.001 18C16.6951 18 15.5841 17.1656 15.172 16.0009L12.001 16L8.53698 10ZM18.001 14C17.4487 14 17.001 14.4477 17.001 15C17.001 15.5523 17.4487 16 18.001 16C18.5533 16 19.001 15.5523 19.001 15C19.001 14.4477 18.5533 14 18.001 14ZM3.50098 8C2.94869 8 2.50098 8.4477 2.50098 9C2.50098 9.5523 2.94869 10 3.50098 10C4.05326 10 4.50098 9.5523 4.50098 9C4.50098 8.4477 4.05326 8 3.50098 8ZM18.001 2C17.4487 2 17.001 2.44772 17.001 3C17.001 3.55228 17.4487 4 18.001 4C18.5533 4 19.001 3.55228 19.001 3C19.001 2.44772 18.5533 2 18.001 2Z"
+        ></path>
+      </svg>
+      <p>شارك الموقع</p>
+    </button>
+  </ul>
+</nav>

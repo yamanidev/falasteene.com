@@ -1,0 +1,52 @@
+#menu__toggle {
+  display: none; /* Hide the checkbox */
+}
+
+.menu__btn {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -10%); /* Center the menu button */
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffff;
+  transition-duration: 0.25s;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__btn > span.open {
+  transform: rotate(45deg);
+  background-color: black; /* Change the background color to blue */
+}
+
+.menu__btn > span.open::before {
+  top: 0;
+  transform: rotate(0deg);
+  background-color: black; /* Change the background color to blue */
+}
+
+.menu__btn > span.open::after {
+  top: 0;
+  transform: rotate(90deg);
+  background-color: black; /* Change the background color to blue */
+}
