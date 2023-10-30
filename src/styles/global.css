@@ -3,7 +3,6 @@
   font-weight: 300;
   font-style: normal;
   src: url('/fonts/alexandria-light.woff2') format('woff2');
-  /*src: url('/public/fonts/alexandria-light.woff2') format('woff2');*/
 }
 
 @font-face {
@@ -11,7 +10,6 @@
   font-weight: 400;
   font-style: normal;
   src: url('/fonts/alexandria-regular.woff2') format('woff2');
-  /*src: url('/public/fonts/alexandria-regular.woff2') format('woff2');*/
 }
 
 @font-face {
@@ -19,5 +17,4 @@
   font-weight: 600;
   font-style: normal;
   src: url('/fonts/alexandria-semibold.woff2') format('woff2');
-  /*src: url('/public/fonts/alexandria-semibold.woff2') format('woff2');*/
 }
