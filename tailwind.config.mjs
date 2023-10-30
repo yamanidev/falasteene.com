@@ -4,7 +4,10 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				"ghost-white": "#F7F9FC"
+				"ghost-white": "#F7F9FC",
+				"anti-flash-white": "#F1F1F1",
+				"palestine-red": "#EE2A35",
+				"palestine-green": "#009736"
 			},
 			fontFamily: {
 				alexandria: ['Alexandria', 'sans-serif']
