@@ -1,15 +1,18 @@
 ---
+import Hero from '../components/Hero.astro';
 import '../styles/global.css';
 ---
 
-<html lang="ar">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
-  <body class="font-alexandria bg-ghost-white">
-    <h1 class="text-3xl font-light">السلام عليكم</h1>
+  <body class="bg-ghost-white font-alexandria">
+    <main>
+      <Hero />
+    </main>
   </body>
 </html>
