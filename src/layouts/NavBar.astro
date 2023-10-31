@@ -13,7 +13,7 @@ const pathname = new URL(Astro.request.url).pathname;
     <NavMenu client:load>
       <NavBarItem
         client:load
-        link="/home"
+        link="/"
         text="الرئيسية"
         currentLocation={pathname}
       />
@@ -72,7 +72,7 @@ const pathname = new URL(Astro.request.url).pathname;
       <div class="flex justify-self-end">Logo here</div>
       <NavBarItem
         client:load
-        link="/home"
+        link="/"
         text="الرئيسية"
         currentLocation={pathname}
       />
