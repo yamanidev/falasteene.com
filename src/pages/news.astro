@@ -3,6 +3,10 @@ import NavBar from '../layouts/NavBar.astro';
 import '../styles/global.css';
 import LiveStream from '../components/LiveStream.astro';
 import NewsComponent from '../components/NewsComponent';
+import GazaNews from '../components/GazaNews';
+
+const response = await fetch('https://aljazeera-articles-falesteen.vercel.app/get-liveblog');
+const data = await response.json();
 ---
 
 <html lang="ar" dir="rtl">
@@ -14,9 +18,12 @@ import NewsComponent from '../components/NewsComponent';
   </head>
   <body>
     <NavBar />
-    <main class="bg-ghost-white px-4 pb-16 font-alexandria sm:px-16 md:px-20 lg:px-28">
-      <LiveStream />
-      <NewsComponent client:load />
+    <main class="flex flex-col lg:flex-row gap-8 bg-ghost-white px-4 pb-16 font-alexandria sm:px-16 md:px-20 lg:px-28">
+      <div class="flex flex-col w-full lg:w-[140%]">
+        <LiveStream />
+        <NewsComponent headline={data['headline']} liveBlogUpdates={data['blogs']} client:load />
+      </div>
+      <GazaNews GazaNews={data['news']} client:load />
     </main>
   </body>
 </html>

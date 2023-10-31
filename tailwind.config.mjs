@@ -8,7 +8,7 @@ export default {
         'anti-flash-white': '#F1F1F1',
         'palestine-red': '#EE2A35',
         'palestine-green': '#009736',
-        'mainBlue': '#56CCF2',
+        'mainBlue': '#53A2E9',
         'mainText': '#1C1C1C',
         'disabledText': '#817A99'
       },

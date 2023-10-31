@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import BlogComponent from '../BlogComponent';
 
 interface LiveBlogUpdate {
@@ -12,23 +11,15 @@ interface Headline {
   link: string;
 }
 
-function NewsComponent() {
-  const [liveBlogUpdates, setLiveBlogUpdates] = useState<LiveBlogUpdate[]>([]);
-  const [headline, setHeadline] = useState<Headline | null>(null);
+interface Props{
+  headline:Headline;
+  liveBlogUpdates:LiveBlogUpdate[]
+}
 
-  useEffect(() => {
-    const apiUrl = 'https://aljazeera-articles-falesteen.vercel.app/get-liveblog';
+function NewsComponent({headline,liveBlogUpdates}:Props) {
 
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((data) => {
-        setHeadline(data.headline);
-        setLiveBlogUpdates(data.blogs);
-      })
-      .catch((error) => {
-        console.error('Error fetching data:', error);
-      });
-  }, []);
+
+
 
   return (
     <div>
