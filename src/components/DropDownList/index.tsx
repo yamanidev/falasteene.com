@@ -59,12 +59,13 @@ function DropdownList({ options, link, currentLocation, defaultText }: Props) {
       {isOpen && (
         <ul className=" lg:bg-anti-flash-white flex w-full flex-col rounded-md lg:absolute lg:left-0 lg:top-12">
           {options.map((option, index) => (
-            <li
+            <a
+            href={`/${option}`}
               key={index}
               onClick={() => selectOption(option)}
               className="mt-2 w-full rounded-md py-2 font-bold hover:bg-gray-200 lg:mt-0 lg:px-4">
               {option}
-            </li>
+            </a>
           ))}
         </ul>
       )}

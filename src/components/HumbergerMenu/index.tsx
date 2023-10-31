@@ -1,14 +1,14 @@
 import './style.css';
 
 interface Props {
-  toggled: boolean; // Corrected the typo in "toggled"
+  toggled: boolean; 
   toggle: () => void;
 }
 
-function HamburgerMenu({ toggle, toggled }: Props) { // Corrected the component name and added "toggled" prop
+function HamburgerMenu({ toggle, toggled }: Props) { 
   return (
     <div onClick={toggle} className="relative">
-      <div className="menu__btn" htmlFor="menu__toggle">
+      <div  className="menu__btn" >
         <span className={toggled ? 'open' : ''}></span>
       </div>
     </div>
