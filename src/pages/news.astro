@@ -2,7 +2,7 @@
 import NavBar from '../layouts/NavBar.astro';
 import '../styles/global.css';
 import LiveStream from '../components/LiveStream.astro';
-import NewsComponent from '../components/NewsComponent'
+import NewsComponent from '../components/NewsComponent';
 ---
 
 <html lang="ar" dir="rtl">
@@ -12,11 +12,11 @@ import NewsComponent from '../components/NewsComponent'
     <meta name="generator" content={Astro.generator} />
     <title>Falasteene</title>
   </head>
-  <body class="bg-ghost-white font-alexandria">
+  <body>
     <NavBar />
-    <main>
-       <LiveStream/>
-       <NewsComponent client:load/>
+    <main class="bg-ghost-white px-4 pb-16 font-alexandria sm:px-16 md:px-20 lg:px-28">
+      <LiveStream />
+      <!-- <NewsComponent client:load /> -->
     </main>
   </body>
 </html>

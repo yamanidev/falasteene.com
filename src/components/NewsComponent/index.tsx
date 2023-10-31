@@ -23,7 +23,7 @@ function NewsComponent() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        
+
         setHeadline(data.headline);
         setLiveBlogUpdates(data.blogs);
       })
@@ -33,20 +33,31 @@ function NewsComponent() {
   }, []);
 
   return (
-    <div className="px-28">
-      <img src="/assets/news/240px-Al_Jazeera 1.svg" alt="aljazeera" />
+    <div>
       <div className="px-4 py-10">
         {headline && (
-          <a className="text-5xl font-bold text-mainText " href={headline.link}>
-            {headline.title}
-          </a>
+          <div className='relative w-[95%]'>
+            <a className="text-5xl font-bold leading-normal text-mainText " href={headline.link}>
+              {headline.title}
+            </a>
+            <img
+              className="absolute left-[10%] top-12"
+              src="/assets/news/240px-Al_Jazeera 1.svg"
+              alt="aljazeera"
+            />
+          </div>
         )}
       </div>
-      <ul className='flex flex-col gap-8'>
+      <ul className=" flex flex-col gap-8">
         {liveBlogUpdates &&
           liveBlogUpdates.map((update, index) => (
             <li key={index}>
-            <BlogComponent link={update.link} text={update.content} time={update.time} last={(liveBlogUpdates.length -1) == index} />
+              <BlogComponent
+                link={update.link}
+                text={update.content}
+                time={update.time}
+                last={liveBlogUpdates.length - 1 == index}
+              />
             </li>
           ))}
       </ul>
