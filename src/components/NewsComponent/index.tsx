@@ -27,7 +27,7 @@ function NewsComponent({headline,liveBlogUpdates}:Props) {
         {headline && (
           <div className="relative w-[95%]">
             <a
-              className="text-xl font-bold text-mainText sm:text-2xl md:text-3xl lg:text-5xl lg:leading-normal "
+              className="text-xl font-bold text-mainText sm:text-2xl md:text-3xl lg:text-4xl lg:leading-normal "
               href={headline.link}>
               {headline.title}
             </a>
