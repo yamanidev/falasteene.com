@@ -1,0 +1,21 @@
+---
+import NavBar from '../layouts/NavBar.astro';
+import '../styles/global.css';
+import LiveStream from '../components/LiveStream.astro';
+
+---
+
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Falasteene</title>
+  </head>
+  <body class="bg-ghost-white font-alexandria">
+    <NavBar />
+    <main>
+       <LiveStream/>
+    </main>
+  </body>
+</html>
