@@ -32,20 +32,17 @@ function BlogComponent({ link, text, time, last }: Props) {
     };
   }, []);
   return (
-    <div className='flex flex-col'>
+    <div className="flex flex-col justify-center">
       <a ref={elementRef} href={link} target="_blank" className="flex items-center gap-4 ">
         <div className="relative">
-          <div className="relative h-6 w-6 rounded-full border-2 border-mainBlue">
-            <div className="absolute right-[50%] top-[50%] h-4 w-4  translate-x-[50%] translate-y-[-50%]  rounded-full bg-mainBlue "></div>
+          <div className="flex h-6 w-6 items-center justify-center rounded-full border-2 border-mainBlue">
+            <div className=" h-4 w-4  rounded-full bg-mainBlue "></div>
           </div>
         </div>
         <p className="text-xs text-disabledText sm:text-sm md:text-base">{processTime(time)}</p>
         <p className="text-xs font-bold text-mainText sm:text-sm md:text-base">{text}</p>
       </a>
-      {!last && (
-        <div
-          className={` mr-[11px] w-[2px] h-8  bg-disabledText`}></div>
-      )}
+      {!last && <div className={`self-start mr-[11px] h-8 w-[2px]  bg-disabledText `}></div>}
     </div>
   );
 }
