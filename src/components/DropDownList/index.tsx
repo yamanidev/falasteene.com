@@ -1,7 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 
+
+interface Option {
+  name: string;
+  link: string;
+}
 interface Props {
-  options: string[];
+  options: Option[];
   link: string;
   currentLocation: string;
   defaultText: string;
@@ -48,7 +53,7 @@ function DropdownList({ options, link, currentLocation, defaultText }: Props) {
       }`}>
       <div className="flex items-center justify-center gap-4 lg:justify-start">
         <p>
-          {defaultText} : <strong>{selectedOption || 'من داخل الجزائر'}</strong>
+          {defaultText} : <strong>{selectedOption}</strong>
         </p>
         <div className={`transition-all duration-200 ${isOpen && 'rotate-180'}`}>
           <svg width="13" height="8" viewBox="0 0 13 8" xmlns="http://www.w3.org/2000/svg">
@@ -60,11 +65,11 @@ function DropdownList({ options, link, currentLocation, defaultText }: Props) {
         <ul className=" lg:bg-anti-flash-white flex w-full flex-col rounded-md lg:absolute lg:left-0 lg:top-12">
           {options.map((option, index) => (
             <a
-            href={`/${option}`}
+            href={`/${option.link}`}
               key={index}
-              onClick={() => selectOption(option)}
+              onClick={() => selectOption(option.name)}
               className="mt-2 w-full rounded-md py-2 font-bold hover:bg-gray-200 lg:mt-0 lg:px-4">
-              {option}
+              {option.name}
             </a>
           ))}
         </ul>
