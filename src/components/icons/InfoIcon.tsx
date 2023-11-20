@@ -1,8 +1,8 @@
 function InfoIcon({ className }: { className?: string }) {
   return (
     <svg
-      width="20"
-      height="20"
+      width="24"
+      height="24"
       viewBox="0 0 20 20"
       className={className}
       fill="none"

@@ -1,8 +1,8 @@
 function PhoneIcon({ className }: { className?: string }) {
   return (
     <svg
-      width="14"
-      height="14"
+      width="24"
+      height="24"
       viewBox="0 0 14 14"
       className={className}
       fill="none"
