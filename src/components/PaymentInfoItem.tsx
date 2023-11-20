@@ -9,7 +9,9 @@ function PaymentInfoItem({ text, icon }: { text: string; icon: ReactNode }) {
   return (
     <li className="flex items-center gap-1 rounded-md bg-[#d9d9d9] px-4 py-1">
       <span className="rounded-sm bg-white/40 px-1 py-0.5">{icon}</span>
-      <p className="w-full">{text}</p>
+      <p className="w-full" dir="ltr">
+        {text}
+      </p>
       <button
         onClick={copy as MouseEventHandler<HTMLButtonElement>}
         className="rounded-sm bg-white/40 px-1 py-0.5">
