@@ -1,19 +1,21 @@
-export const donationSources = [
+import type { DonationSource } from '../types';
+
+export const donationSources: DonationSource[] = [
   {
     name: 'جمعية البركة الجزائرية',
     local: true,
     wilaya: 'الجزائر العاصمة',
-    methods: [
+    paymentMethods: [
       {
         label: 'CCP',
-        account: '210 243 29 Clé 40'
+        accountNumber: '210 243 29 Clé 40'
       },
       {
         label: 'CPA',
-        account: '004 001 854 100 009 720 30'
+        accountNumber: '004 001 854 100 009 720 30'
       }
     ],
-    contact: {
+    contactDetails: {
       website: 'https://elbarakahdz.com/',
       facebook: 'https://www.facebook.com/Albarakahdz/',
       instagram: 'https://www.instagram.com/elbarakahdz/',
@@ -28,13 +30,13 @@ export const donationSources = [
     name: 'جمعية العلماء المسلمين',
     local: true,
     wilaya: 'الجزائر العاصمة',
-    methods: [
+    paymentMethods: [
       {
         label: 'BNA',
-        account: '001 006 200 200 650 061 41'
+        accountNumber: '001 006 200 200 650 061 41'
       }
     ],
-    contact: {
+    contactDetails: {
       website: 'https://oulama.dz/',
       facebook: 'https://www.facebook.com/officieloulamas',
       phoneNumbers: ['023738684', '023738511', '0770719911'],
@@ -49,7 +51,7 @@ export const donationSources = [
     local: false,
     country: 'تركيا',
     donationLink: 'https://ihh.org.tr/en/donate/palestine-gaza',
-    contact: {
+    contactDetails: {
       website: 'https://ihh.org.tr/ar',
       facebook: 'https://www.facebook.com/ihhen',
       instagram: 'https://www.instagram.com/humanitarianrelief/',
@@ -66,7 +68,7 @@ export const donationSources = [
     country: 'تركيا',
     donationLink:
       'https://ummetvakfi.org/ar//proje/%D8%AD%D9%85%D9%84%D8%A9%20%D8%A5%D8%BA%D8%A7%D8%AB%D9%8A%D8%A9%20%D8%B9%D8%A7%D8%AC%D9%84%D8%A9-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86/304',
-    contact: {
+    contactDetails: {
       website: 'https://ummetvakfi.org/ar/',
       facebook: 'https://www.facebook.com/ummetvakf/',
       instagram: 'https://www.instagram.com/ummetvakf/',
@@ -82,7 +84,7 @@ export const donationSources = [
     local: false,
     country: 'تركيا',
     donationLink: 'https://dkvsturkiye.ensany.com/campaign/6442',
-    contact: {
+    contactDetails: {
       website: 'https://dkvsturkiye.ensany.com/',
       facebook: 'https://web.facebook.com/DQWS.TURKEY',
       instagram: 'https://www.instagram.com/dqws.turkey/',
@@ -99,7 +101,7 @@ export const donationSources = [
     local: false,
     country: 'مصر',
     donationLink: 'https://mersal-ngo.org/Donation',
-    contact: {
+    contactDetails: {
       website: 'https://mersal-ngo.org/',
       facebook: 'https://web.facebook.com/Mersalfoundation',
       instagram: 'https://www.instagram.com/mersal_foundation/',
