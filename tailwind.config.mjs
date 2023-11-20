@@ -11,6 +11,9 @@ export default {
       },
       fontFamily: {
         alexandria: ['Alexandria', 'sans-serif']
+      },
+      boxShadow: {
+        navbar: '0px 4px 30px 0px rgba(0, 0, 0, 0.04)'
       }
     }
   },
