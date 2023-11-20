@@ -74,7 +74,7 @@ function DonationSourceCard({ details, className }: Props) {
                       <a
                         href={`tel:${phoneNumber}`}
                         className="inline-block rounded-md bg-black p-2">
-                        <PhoneIcon className="w-3.5" />
+                        <PhoneIcon className="h-3.5 w-3.5" />
                       </a>
                     </li>
                   ))}
@@ -96,7 +96,7 @@ function DonationSourceCard({ details, className }: Props) {
                       rel="noreferrer"
                       target="_blank"
                       className="inline-block rounded-md bg-[#FF0069] p-2">
-                      <InstagramIcon className="w-3.5" />
+                      <InstagramIcon className="h-3.5 w-3.5" />
                     </a>
                   </li>
                 )}
@@ -137,7 +137,7 @@ function DonationSourceCard({ details, className }: Props) {
               details.contactDetails.phoneNumbers.map((phoneNumber, index) => (
                 <li key={index}>
                   <a href={`tel:${phoneNumber}`} className="inline-block rounded-md bg-black p-2">
-                    <PhoneIcon className="w-3.5" />
+                    <PhoneIcon className="h-3.5 w-3.5" />
                   </a>
                 </li>
               ))}
@@ -159,7 +159,7 @@ function DonationSourceCard({ details, className }: Props) {
                   rel="noreferrer"
                   target="_blank"
                   className="inline-block rounded-md bg-[#FF0069] p-2">
-                  <InstagramIcon className="w-3.5" />
+                  <InstagramIcon className="h-3.5 w-3.5" />
                 </a>
               </li>
             )}
