@@ -38,7 +38,11 @@ function DonationSourceCard({ details, className }: Props) {
                 <LocationIcon className="h-4 w-3" />
               </span>
               {details.contactDetails.location.link ? (
-                <a href={details.contactDetails.location.link} className="w-full underline">
+                <a
+                  href={details.contactDetails.location.link}
+                  rel="noreferrer"
+                  target="_blank"
+                  className="w-full underline">
                   {details.contactDetails.location.text}
                 </a>
               ) : (
@@ -78,6 +82,8 @@ function DonationSourceCard({ details, className }: Props) {
                   <li>
                     <a
                       href={details.contactDetails.whatsapp}
+                      rel="noreferrer"
+                      target="_blank"
                       className="inline-block rounded-md bg-[#25D366] p-2">
                       <WhatsAppIcon className="h-3.5 w-3.5" />
                     </a>
@@ -87,6 +93,8 @@ function DonationSourceCard({ details, className }: Props) {
                   <li>
                     <a
                       href={details.contactDetails.instagram}
+                      rel="noreferrer"
+                      target="_blank"
                       className="inline-block rounded-md bg-[#FF0069] p-2">
                       <InstagramIcon className="w-3.5" />
                     </a>
@@ -96,6 +104,8 @@ function DonationSourceCard({ details, className }: Props) {
                   <li>
                     <a
                       href={details.contactDetails.facebook}
+                      rel="noreferrer"
+                      target="_blank"
                       className="inline-block rounded-md bg-[#1877F2] p-2">
                       <img
                         src="/images/facebook-logo-white.png"
@@ -111,6 +121,8 @@ function DonationSourceCard({ details, className }: Props) {
           {!details.local && (
             <a
               href={details.donationLink}
+              rel="noreferrer"
+              target="_blank"
               className="flex flex-col justify-center rounded-md border border-palestine-green px-8 text-palestine-green">
               <span>
                 <InfoIcon className="h-6 w-6 text-xs font-normal" />
@@ -133,6 +145,8 @@ function DonationSourceCard({ details, className }: Props) {
               <li>
                 <a
                   href={details.contactDetails.whatsapp}
+                  rel="noreferrer"
+                  target="_blank"
                   className="inline-block rounded-md bg-[#25D366] p-2">
                   <WhatsAppIcon className="h-3.5 w-3.5" />
                 </a>
@@ -142,6 +156,8 @@ function DonationSourceCard({ details, className }: Props) {
               <li>
                 <a
                   href={details.contactDetails.instagram}
+                  rel="noreferrer"
+                  target="_blank"
                   className="inline-block rounded-md bg-[#FF0069] p-2">
                   <InstagramIcon className="w-3.5" />
                 </a>
@@ -151,6 +167,8 @@ function DonationSourceCard({ details, className }: Props) {
               <li>
                 <a
                   href={details.contactDetails.facebook}
+                  rel="noreferrer"
+                  target="_blank"
                   className="inline-block rounded-md bg-[#1877F2] p-2">
                   <img
                     src="/images/facebook-logo-white.png"
