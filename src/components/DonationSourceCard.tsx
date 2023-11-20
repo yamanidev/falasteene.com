@@ -1,6 +1,9 @@
+import type { MouseEventHandler, ReactNode } from 'react';
+import useCopyToClipboard from '../hooks/useCopyToClipboard';
 import type { DonationSource } from '../types';
 import AlgeriePosteIcon from './icons/AlgeriePosteIcon';
 import BankIcon from './icons/BankIcon';
+import CheckIcon from './icons/CheckIcon';
 import CopyIcon from './icons/CopyIcon';
 import InfoIcon from './icons/InfoIcon';
 import InstagramIcon from './icons/InstagramIcon';
@@ -12,6 +15,23 @@ type Props = {
   details: DonationSource;
   className?: string;
 };
+
+function PaymentInfoItem({ text, icon }: { text: string; icon: ReactNode }) {
+  const [copyStatus, copy] = useCopyToClipboard(text);
+
+  return (
+    <li className="flex items-center gap-1 rounded-md bg-[#d9d9d9] px-4 py-1">
+      <span className="rounded-sm bg-white/40 px-1 py-0.5">{icon}</span>
+      <p className="w-full">{text}</p>
+      <button
+        onClick={copy as MouseEventHandler<HTMLButtonElement>}
+        className="rounded-sm bg-white/40 px-1 py-0.5">
+        {copyStatus === 'inactive' && <CopyIcon className="h-3 w-3" />}
+        {copyStatus === 'copied' && <CheckIcon className="h-3 w-3" />}
+      </button>
+    </li>
+  );
+}
 
 function DonationSourceCard({ details, className }: Props) {
   return (
@@ -50,21 +70,17 @@ function DonationSourceCard({ details, className }: Props) {
               )}
             </li>
             {details.paymentMethods?.map((method, index) => (
-              <li key={index} className="flex items-center gap-1 rounded-md bg-[#d9d9d9] px-4 py-1">
-                <span className="rounded-sm bg-white/40 px-1 py-0.5">
-                  {method.label === 'CCP' ? (
+              <PaymentInfoItem
+                key={index}
+                text={method.accountNumber}
+                icon={
+                  method.label === 'CCP' ? (
                     <AlgeriePosteIcon className="h-3 w-2.5" />
                   ) : (
                     <BankIcon className="h-3 w-3" />
-                  )}
-                </span>
-                <p className="w-full" dir="ltr">
-                  {method.accountNumber}
-                </p>
-                <button className="rounded-sm bg-white/40 px-1 py-0.5">
-                  <CopyIcon className="h-3 w-2.5" />
-                </button>
-              </li>
+                  )
+                }
+              />
             ))}
             {!details.local && (
               <ul className="mt-auto flex justify-center gap-1">
