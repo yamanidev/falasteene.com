@@ -1,37 +1,15 @@
-import type { MouseEventHandler, ReactNode } from 'react';
-import useCopyToClipboard from '../hooks/useCopyToClipboard';
 import type { DonationSource } from '../types';
+import ContactLinks from './ContactLinks';
+import PaymentInfoItem from './PaymentInfoItem';
 import AlgeriePosteIcon from './icons/AlgeriePosteIcon';
 import BankIcon from './icons/BankIcon';
-import CheckIcon from './icons/CheckIcon';
-import CopyIcon from './icons/CopyIcon';
 import InfoIcon from './icons/InfoIcon';
-import InstagramIcon from './icons/InstagramIcon';
 import LocationIcon from './icons/LocationIcon';
-import PhoneIcon from './icons/PhoneIcon';
-import WhatsAppIcon from './icons/WhatsAppIcon';
 
 type Props = {
   details: DonationSource;
   className?: string;
 };
-
-function PaymentInfoItem({ text, icon }: { text: string; icon: ReactNode }) {
-  const [copyStatus, copy] = useCopyToClipboard(text);
-
-  return (
-    <li className="flex items-center gap-1 rounded-md bg-[#d9d9d9] px-4 py-1">
-      <span className="rounded-sm bg-white/40 px-1 py-0.5">{icon}</span>
-      <p className="w-full">{text}</p>
-      <button
-        onClick={copy as MouseEventHandler<HTMLButtonElement>}
-        className="rounded-sm bg-white/40 px-1 py-0.5">
-        {copyStatus === 'inactive' && <CopyIcon className="h-3 w-3" />}
-        {copyStatus === 'copied' && <CheckIcon className="h-3 w-3" />}
-      </button>
-    </li>
-  );
-}
 
 function DonationSourceCard({ details, className }: Props) {
   return (
@@ -83,55 +61,7 @@ function DonationSourceCard({ details, className }: Props) {
               />
             ))}
             {!details.local && (
-              <ul className="mt-auto flex justify-center gap-1">
-                {details.contactDetails.phoneNumbers &&
-                  details.contactDetails.phoneNumbers.map((phoneNumber, index) => (
-                    <li key={index}>
-                      <a
-                        href={`tel:${phoneNumber}`}
-                        className="inline-block rounded-md bg-black p-2">
-                        <PhoneIcon className="h-3.5 w-3.5" />
-                      </a>
-                    </li>
-                  ))}
-                {details.contactDetails.whatsapp && (
-                  <li>
-                    <a
-                      href={details.contactDetails.whatsapp}
-                      rel="noreferrer"
-                      target="_blank"
-                      className="inline-block rounded-md bg-[#25D366] p-2">
-                      <WhatsAppIcon className="h-3.5 w-3.5" />
-                    </a>
-                  </li>
-                )}
-                {details.contactDetails.instagram && (
-                  <li>
-                    <a
-                      href={details.contactDetails.instagram}
-                      rel="noreferrer"
-                      target="_blank"
-                      className="inline-block rounded-md bg-[#FF0069] p-2">
-                      <InstagramIcon className="h-3.5 w-3.5" />
-                    </a>
-                  </li>
-                )}
-                {details.contactDetails.facebook && (
-                  <li>
-                    <a
-                      href={details.contactDetails.facebook}
-                      rel="noreferrer"
-                      target="_blank"
-                      className="inline-block rounded-md bg-[#1877F2] p-2">
-                      <img
-                        src="/images/facebook-logo-white.png"
-                        alt="Facebook logo"
-                        className="w-3.5"
-                      />
-                    </a>
-                  </li>
-                )}
-              </ul>
+              <ContactLinks details={details.contactDetails} className="mt-auto" />
             )}
           </ul>
           {!details.local && (
@@ -147,55 +77,7 @@ function DonationSourceCard({ details, className }: Props) {
             </a>
           )}
         </div>
-        {details.local && (
-          <ul className="mt-2 flex justify-center gap-1">
-            {details.contactDetails.phoneNumbers &&
-              details.contactDetails.phoneNumbers.map((phoneNumber, index) => (
-                <li key={index}>
-                  <a href={`tel:${phoneNumber}`} className="inline-block rounded-md bg-black p-2">
-                    <PhoneIcon className="h-3.5 w-3.5" />
-                  </a>
-                </li>
-              ))}
-            {details.contactDetails.whatsapp && (
-              <li>
-                <a
-                  href={details.contactDetails.whatsapp}
-                  rel="noreferrer"
-                  target="_blank"
-                  className="inline-block rounded-md bg-[#25D366] p-2">
-                  <WhatsAppIcon className="h-3.5 w-3.5" />
-                </a>
-              </li>
-            )}
-            {details.contactDetails.instagram && (
-              <li>
-                <a
-                  href={details.contactDetails.instagram}
-                  rel="noreferrer"
-                  target="_blank"
-                  className="inline-block rounded-md bg-[#FF0069] p-2">
-                  <InstagramIcon className="h-3.5 w-3.5" />
-                </a>
-              </li>
-            )}
-            {details.contactDetails.facebook && (
-              <li>
-                <a
-                  href={details.contactDetails.facebook}
-                  rel="noreferrer"
-                  target="_blank"
-                  className="inline-block rounded-md bg-[#1877F2] p-2">
-                  <img
-                    src="/images/facebook-logo-white.png"
-                    alt="Facebook logo"
-                    className="w-3.5"
-                  />
-                </a>
-              </li>
-            )}
-          </ul>
-        )}
+        {details.local && <ContactLinks details={details.contactDetails} className="mt-2" />}
       </div>
     </div>
   );
