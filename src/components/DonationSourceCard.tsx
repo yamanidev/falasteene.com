@@ -13,7 +13,7 @@ type Props = {
 
 function DonationSourceCard({ details, className }: Props) {
   return (
-    <div className={`overflow-hidden rounded-md bg-anti-flash-white ${className}`}>
+    <div className={`shadow-card overflow-hidden rounded-md bg-anti-flash-white ${className}`}>
       <header className="text-center">
         <h6
           className={`py-1.5 text-sm font-light text-anti-flash-white ${
