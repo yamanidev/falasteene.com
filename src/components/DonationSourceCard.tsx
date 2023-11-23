@@ -23,12 +23,15 @@ function DonationSourceCard({ details, className }: Props) {
             ? `من داخل الجزائر: ${details.wilaya}`
             : `من خارج الجزائر: ${details.country}`}
         </h6>
-        <h2 className="mt-4 text-xl">{details.name}</h2>
+        <h2 className="mt-4 hidden text-xl sm:block">{details.name}</h2>
       </header>
-      <div className="mt-5 px-4 pb-3">
-        <div className="flex w-full gap-3">
-          <div className="flex h-28 w-28 shrink-0 items-center justify-center rounded-md bg-black">
-            <p className="font-semibold text-white">LOGO</p>
+      <div className={`mt-5 ${details.local ? 'pb-3' : 'sm:pb-3'}`}>
+        <div className="flex w-full flex-col items-center gap-3 px-4 sm:flex-row sm:items-stretch">
+          <div className="shrink-0">
+            <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-md bg-black sm:mx-0">
+              <p className="font-semibold text-white">LOGO</p>
+            </div>
+            <h2 className="mt-5 text-center text-xl sm:hidden">{details.name}</h2>
           </div>
           <ul className="flex w-full flex-col gap-1.5 text-xs font-light text-[#817A99]">
             <li className="flex items-center gap-1 rounded-md bg-[#d9d9d9] px-4 py-1">
@@ -61,7 +64,7 @@ function DonationSourceCard({ details, className }: Props) {
               />
             ))}
             {!details.local && (
-              <ContactLinks details={details.contactDetails} className="mt-auto" />
+              <ContactLinks details={details.contactDetails} className="mt-2 sm:mt-auto" />
             )}
           </ul>
           {!details.local && (
@@ -69,7 +72,7 @@ function DonationSourceCard({ details, className }: Props) {
               href={details.donationLink}
               rel="noreferrer"
               target="_blank"
-              className="flex flex-col justify-center rounded-md border border-palestine-green px-8 text-palestine-green">
+              className="hidden flex-col justify-center rounded-md border border-palestine-green px-8 text-palestine-green sm:flex">
               <span>
                 <InfoIcon className="h-6 w-6 text-xs font-normal" />
               </span>
@@ -77,7 +80,21 @@ function DonationSourceCard({ details, className }: Props) {
             </a>
           )}
         </div>
-        {details.local && <ContactLinks details={details.contactDetails} className="mt-2" />}
+        {details.local && (
+          <ContactLinks details={details.contactDetails} className="mt-4 sm:mt-2" />
+        )}
+        {!details.local && (
+          <a
+            href={details.donationLink}
+            rel="noreferrer"
+            target="_blank"
+            className="mt-4 flex flex-col items-center justify-center rounded-md border border-palestine-green py-2 text-palestine-green sm:hidden">
+            <span>
+              <InfoIcon className="h-6 w-6 text-xs font-normal" />
+            </span>
+            <span>تبرع</span>
+          </a>
+        )}
       </div>
     </div>
   );
