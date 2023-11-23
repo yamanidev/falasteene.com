@@ -72,7 +72,7 @@ function DonationSourceCard({ details, className }: Props) {
               href={details.donationLink}
               rel="noreferrer"
               target="_blank"
-              className="hidden flex-col justify-center rounded-md border border-palestine-green px-8 text-palestine-green sm:flex">
+              className="hidden flex-col justify-center rounded-md border border-palestine-green px-8 text-palestine-green transition hover:bg-palestine-green hover:text-white sm:flex">
               <span>
                 <InfoIcon className="h-6 w-6 text-xs font-normal" />
               </span>
@@ -88,7 +88,7 @@ function DonationSourceCard({ details, className }: Props) {
             href={details.donationLink}
             rel="noreferrer"
             target="_blank"
-            className="mt-4 flex flex-col items-center justify-center rounded-md border border-palestine-green py-2 text-palestine-green sm:hidden">
+            className="mt-4 flex flex-col items-center justify-center rounded-md bg-palestine-green py-2 text-white sm:hidden">
             <span>
               <InfoIcon className="h-6 w-6 text-xs font-normal" />
             </span>
