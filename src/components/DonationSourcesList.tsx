@@ -4,7 +4,7 @@ import DonationSourceCard from './DonationSourceCard';
 function DonationSourcesList({ className }: { className?: string }) {
   return (
     <section className={className}>
-      <div className="space-y-4">
+      <div className="space-y-10 sm:space-y-4">
         {donationSources.map((donationSources, index) => (
           <DonationSourceCard key={index} details={donationSources} />
         ))}
