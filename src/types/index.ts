@@ -21,6 +21,10 @@ export type DonationSource = {
   local: boolean;
   wilaya?: string;
   country?: string;
+  logo: {
+    src: string;
+    alt: string;
+  };
   paymentMethods?: PaymentMethod[];
   donationLink?: string;
   contactDetails: ContactDetails;
