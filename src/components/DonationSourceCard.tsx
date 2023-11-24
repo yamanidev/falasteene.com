@@ -1,3 +1,4 @@
+import { donationSources } from '../data/donationSources';
 import type { DonationSource } from '../types';
 import ContactLinks from './ContactLinks';
 import PaymentInfoItem from './PaymentInfoItem';
@@ -28,9 +29,11 @@ function DonationSourceCard({ details, className }: Props) {
       <div className={`mt-5 ${details.local ? 'pb-3' : 'sm:pb-3'}`}>
         <div className="flex w-full flex-col items-center gap-3 px-4 sm:flex-row sm:items-stretch">
           <div className="shrink-0">
-            <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-md bg-black sm:mx-0">
-              <p className="font-semibold text-white">LOGO</p>
-            </div>
+            <img
+              src={details.logo.src}
+              alt={details.logo.alt}
+              className="mx-auto flex h-28 w-28 items-center justify-center object-contain sm:mx-0"
+            />
             <h2 className="mt-5 text-center text-xl sm:hidden">{details.name}</h2>
           </div>
           <ul className="flex w-full flex-col gap-1.5 text-xs font-light text-[#817A99]">

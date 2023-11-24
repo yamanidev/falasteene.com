@@ -5,6 +5,10 @@ export const donationSources: DonationSource[] = [
     name: 'جمعية البركة الجزائرية',
     local: true,
     wilaya: 'الجزائر العاصمة',
+    logo: {
+      src: '/images/associations/elbarakah-logo.png',
+      alt: 'El Barakah association logo'
+    },
     paymentMethods: [
       {
         label: 'CCP',
@@ -30,6 +34,10 @@ export const donationSources: DonationSource[] = [
     name: 'جمعية العلماء المسلمين',
     local: true,
     wilaya: 'الجزائر العاصمة',
+    logo: {
+      src: '/images/associations/oulama-logo.png',
+      alt: 'Association of the muslim scolars logo'
+    },
     paymentMethods: [
       {
         label: 'BNA',
@@ -50,6 +58,10 @@ export const donationSources: DonationSource[] = [
     name: 'هيئة الإغاثة الإنسانية iHH',
     local: false,
     country: 'تركيا',
+    logo: {
+      src: '/images/associations/ihh-logo.svg',
+      alt: 'IHH Humanitarian Relief Foundation logo'
+    },
     donationLink: 'https://ihh.org.tr/en/donate/palestine-gaza',
     contactDetails: {
       website: 'https://ihh.org.tr/ar',
@@ -66,6 +78,10 @@ export const donationSources: DonationSource[] = [
     name: 'وقف الأمة',
     local: false,
     country: 'تركيا',
+    logo: {
+      src: '/images/associations/ummetvakfi-logo.png',
+      alt: 'Ummet waqf association logo'
+    },
     donationLink:
       'https://ummetvakfi.org/ar//proje/%D8%AD%D9%85%D9%84%D8%A9%20%D8%A5%D8%BA%D8%A7%D8%AB%D9%8A%D8%A9%20%D8%B9%D8%A7%D8%AC%D9%84%D8%A9-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86/304',
     contactDetails: {
@@ -83,6 +99,10 @@ export const donationSources: DonationSource[] = [
     name: 'حملة إنصروا غزة - دار القرآن الكريم والسنة',
     local: false,
     country: 'تركيا',
+    logo: {
+      src: '/images/associations/dar-quraan-sunnah-logo.png',
+      alt: 'Dar Quraan and Sunnah association logo'
+    },
     donationLink: 'https://dkvsturkiye.ensany.com/campaign/6442',
     contactDetails: {
       website: 'https://dkvsturkiye.ensany.com/',
@@ -100,6 +120,10 @@ export const donationSources: DonationSource[] = [
     name: 'مؤسسة مرسال للأعمال الخيرية و التنموية',
     local: false,
     country: 'مصر',
+    logo: {
+      src: '/images/associations/mersal-logo.png',
+      alt: 'Mersal foundation logo'
+    },
     donationLink: 'https://mersal-ngo.org/Donation',
     contactDetails: {
       website: 'https://mersal-ngo.org/',
