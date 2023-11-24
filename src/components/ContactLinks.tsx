@@ -1,4 +1,5 @@
 import type { ContactDetails } from '../types';
+import GlobeIcon from './icons/GlobeIcon';
 import InstagramIcon from './icons/InstagramIcon';
 import PhoneIcon from './icons/PhoneIcon';
 import WhatsAppIcon from './icons/WhatsAppIcon';
@@ -14,6 +15,17 @@ function ContactLinks({ details, className }: { details: ContactDetails; classNa
             </a>
           </li>
         ))}
+      {details.website && (
+        <li>
+          <a
+            href={details.website}
+            rel="noreferrer"
+            target="_blank"
+            className="inline-block rounded-md bg-palestine-green p-2">
+            <GlobeIcon className="h-3.5 w-3.5 text-white" />
+          </a>
+        </li>
+      )}
       {details.whatsapp && (
         <li>
           <a
