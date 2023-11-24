@@ -7,7 +7,7 @@ function PalestineIcon({ className }: { className?: string }) {
       className={className}
       fill="#009736"
       xmlns="http://www.w3.org/2000/svg">
-      <g clip-path="url(#clip0_377_2099)">
+      <g clipPath="url(#clip0_377_2099)">
         <mask id="path-1-inside-1_377_2099" fill="white">
           <path
             fillRule="evenodd"
