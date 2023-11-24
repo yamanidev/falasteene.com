@@ -13,7 +13,7 @@ type Props = {
 
 function DonationSourceCard({ details, className }: Props) {
   return (
-    <div className={`shadow-card overflow-hidden rounded-md bg-anti-flash-white ${className}`}>
+    <div className={`overflow-hidden rounded-md bg-anti-flash-white shadow-card ${className}`}>
       <header className="text-center">
         <h6
           className={`py-1.5 text-sm font-light text-anti-flash-white ${
@@ -23,7 +23,7 @@ function DonationSourceCard({ details, className }: Props) {
             ? `من داخل الجزائر: ${details.wilaya}`
             : `من خارج الجزائر: ${details.country}`}
         </h6>
-        <h2 className="mt-4 hidden text-xl sm:block">{details.name}</h2>
+        <h2 className="mt-4 hidden px-4 text-xl sm:block">{details.name}</h2>
       </header>
       <div className={`mt-5 ${details.local ? 'pb-3' : 'sm:pb-3'}`}>
         <div className="flex w-full flex-col items-center gap-3 px-4 sm:flex-row sm:items-stretch">
@@ -72,7 +72,7 @@ function DonationSourceCard({ details, className }: Props) {
               href={details.donationLink}
               rel="noreferrer"
               target="_blank"
-              className="hidden flex-col justify-center rounded-md border border-palestine-green px-8 text-palestine-green transition hover:bg-palestine-green hover:text-white sm:flex">
+              className="hidden flex-col items-center justify-center rounded-md border border-palestine-green px-8 text-palestine-green transition hover:bg-palestine-green hover:text-white sm:flex">
               <span>
                 <InfoIcon className="h-6 w-6 text-xs font-normal" />
               </span>
