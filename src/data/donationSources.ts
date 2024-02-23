@@ -129,7 +129,7 @@ export const donationSources: DonationSource[] = [
       website: 'https://mersal-ngo.org/',
       facebook: 'https://web.facebook.com/Mersalfoundation',
       instagram: 'https://www.instagram.com/mersal_foundation/',
-      twitter: 'https://twitter.com/IHHen',
+      twitter: 'https://twitter.com/Mersalcharity',
       location: {
         text: '276 شارع عبد السلام عارف، السيوف بحري، قسم المنتزه، الإسكندرية،',
         link: 'https://maps.app.goo.gl/UDYXd8nrvfrsbFXi7'
