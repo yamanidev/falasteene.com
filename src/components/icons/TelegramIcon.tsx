@@ -1,8 +1,16 @@
-function TelegramIcon({ className }: { className?: string }) {
+function TelegramIcon({
+  width = '24',
+  height = '24',
+  className
+}: {
+  width?: string;
+  height?: string;
+  className?: string;
+}) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 1000 1000"
       className={className}
       version="1.1"
