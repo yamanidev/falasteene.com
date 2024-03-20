@@ -29,3 +29,13 @@ export type DonationSource = {
   donationLink?: string;
   contactDetails: ContactDetails;
 };
+
+export type TelegramChannel = {
+  name: string;
+  description: string;
+  logo: {
+    src: string;
+    alt: string;
+  };
+  channelLink: string;
+};

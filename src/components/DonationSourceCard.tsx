@@ -1,4 +1,3 @@
-import { donationSources } from '../data/donationSources';
 import type { DonationSource } from '../types';
 import ContactLinks from './ContactLinks';
 import PaymentInfoItem from './PaymentInfoItem';
