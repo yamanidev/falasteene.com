@@ -1,0 +1,20 @@
+---
+import Meta from '../components/Meta.astro';
+import Navbar from '../components/Navbar.astro';
+import TelegramChannelsList from '../components/TelegramChannelsList';
+import '../styles/global.css';
+---
+
+<html lang="ar" dir="rtl">
+  <Meta />
+  <body class="bg-ghost-white font-alexandria">
+    <Navbar />
+    <main>
+      <section class="pt-16">
+        <div class="mx-auto max-w-7xl px-3">
+          <TelegramChannelsList />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
