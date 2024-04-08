@@ -1,10 +1,22 @@
 ## About
 
-A curated list of Algerian, Egyptian, and Turkish associations and campaigns that provide aid to Palestinian families and children.
+A curated list of associations and campaigns that provide aid to Palestinian families and children.
 
-## Associations
+### Algeria
 
-### International
+- El Barakah
+  - [Website](https://elbarakahdz.com/)
+  - [Facebook](https://www.facebook.com/Albarakahdz/)
+  - [Instagram](https://www.instagram.com/elbarakahdz/)
+  - Phone numbers: +213797691031 or +213782018936
+  - Location: [جمعية البركة للعمل الخيري و الانساني, 2 مكرر- لاكوت, Bir Mourad Raïs](https://maps.app.goo.gl/r8THTB3meG1zX9W67)
+- Oulama
+  - [Website](https://oulama.dz/)
+  - [Facebook](https://www.facebook.com/officieloulamas)
+  - Phone numbers: +21323738684, +21323738511, or +213770719911
+  - Location: [17 شارع محمد مربوش, Hussein Dey 16006](https://maps.app.goo.gl/ECQKLn7i5YDjV3mN6)
+
+### Republic of Türkiye
 
 - İHH Humanitarian Relief Foundation
   - [Donation link](https://ihh.org.tr/en/donate/palestine-gaza)
@@ -28,6 +40,9 @@ A curated list of Algerian, Egyptian, and Turkish associations and campaigns tha
   - [WhatsApp](https://wa.me/+90%20531%20269%2080%2009?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%B9%D9%86%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1.)
   - Phone number: +905312698009
   - Location: Kayabaşı mahallesi sefahat sokak no 7/E A1-1 blok Daire 6 Başakşehir İstanbul
+
+### Egypt
+
 - Mersal
   - [Campaign donation link](https://mersal-ngo.org/Donation)
   - [Website](https://mersal-ngo.org/)
@@ -35,14 +50,3 @@ A curated list of Algerian, Egyptian, and Turkish associations and campaigns tha
   - [Instagram](https://www.instagram.com/mersal_foundation/)
   - [X (formerly Twitter)](https://twitter.com/Mersalcharity)
   - Location: [8 Street 263, Ezbet Fahmy, El Basatin, Cairo Governorate 4234030, Egypt](https://maps.app.goo.gl/UDYXd8nrvfrsbFXi7)
-- El Barakah
-  - [Website](https://elbarakahdz.com/)
-  - [Facebook](https://www.facebook.com/Albarakahdz/)
-  - [Instagram](https://www.instagram.com/elbarakahdz/)
-  - Phone numbers: +213797691031 or +213782018936
-  - Location: [جمعية البركة للعمل الخيري و الانساني, 2 مكرر- لاكوت, Bir Mourad Raïs](https://maps.app.goo.gl/r8THTB3meG1zX9W67)
-- Oulama
-  - [Website](https://oulama.dz/)
-  - [Facebook](https://www.facebook.com/officieloulamas)
-  - Phone numbers: +21323738684, +21323738511, or +213770719911
-  - Location: [17 شارع محمد مربوش, Hussein Dey 16006](https://maps.app.goo.gl/ECQKLn7i5YDjV3mN6)
