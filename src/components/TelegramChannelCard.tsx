@@ -1,9 +1,13 @@
+import type { MouseEventHandler } from 'react';
+import useCopyToClipboard from '../hooks/useCopyToClipboard';
 import type { TelegramChannel } from '../types';
 import LinkIcon from './icons/LinkIcon';
 import TelegramIcon from './icons/TelegramIcon';
 import TelegramInnerIcon from './icons/TelegramInnerIcon';
 
 function TelegramChannelCard({ name, description, logo, channelLink }: TelegramChannel) {
+  const [copyStatus, copy] = useCopyToClipboard(channelLink);
+
   return (
     <article className="mx-auto w-full max-w-2xl rounded-md border border-black/20 xl:mx-0">
       <div className="flex flex-col items-center justify-between gap-5 pt-3 sm:flex-row sm:py-3 sm:pl-6 sm:pr-2.5">
@@ -23,9 +27,12 @@ function TelegramChannelCard({ name, description, logo, channelLink }: TelegramC
               {description ? description : 'لا يوجد وصف للقناة.'}
             </p>
             <button
-              lang="en"
+              onClick={copy as MouseEventHandler<HTMLButtonElement>}
               className="mx-auto mt-auto flex items-center gap-1 text-sm font-medium text-telegram-blue sm:mx-0">
-              <span className="underline">Copy link</span>
+              <span className="underline" dir="ltr" lang="en">
+                {copyStatus === 'inactive' && 'Copy link'}
+                {copyStatus === 'copied' && 'Copied!'}
+              </span>
               <span className="inline-block h-1 w-1 rounded-full bg-telegram-blue"></span>
               <span>
                 <LinkIcon className="text-telegram-blue" />
