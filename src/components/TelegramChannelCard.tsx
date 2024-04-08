@@ -16,7 +16,7 @@ function TelegramChannelCard({ name, description, logo, channelLink }: TelegramC
             className="h-[9.125rem] shrink-0 self-center rounded-xl"
           />
           <div className="flex flex-col">
-            <h2 className="bg-telegram-blue mx-auto w-fit rounded-xl px-2 py-1 font-medium text-white sm:mx-0">
+            <h2 className="mx-auto w-fit rounded-xl bg-telegram-blue px-2 py-1 font-medium text-white sm:mx-0">
               {name}
             </h2>
             <p className="mb-5 mt-2.5 text-sm font-light text-[#666]/80">
@@ -24,9 +24,9 @@ function TelegramChannelCard({ name, description, logo, channelLink }: TelegramC
             </p>
             <button
               lang="en"
-              className="text-telegram-blue mx-auto mt-auto flex items-center gap-1 text-sm font-medium sm:mx-0">
+              className="mx-auto mt-auto flex items-center gap-1 text-sm font-medium text-telegram-blue sm:mx-0">
               <span className="underline">Copy link</span>
-              <span className="bg-telegram-blue inline-block h-1 w-1 rounded-full"></span>
+              <span className="inline-block h-1 w-1 rounded-full bg-telegram-blue"></span>
               <span>
                 <LinkIcon className="text-telegram-blue" />
               </span>
@@ -35,7 +35,7 @@ function TelegramChannelCard({ name, description, logo, channelLink }: TelegramC
         </div>
         <a
           href={channelLink}
-          className="bg-telegram-blue inline-block w-full py-3 sm:w-auto sm:bg-transparent sm:py-0">
+          className="inline-block w-full bg-telegram-blue py-3 sm:w-auto sm:bg-transparent sm:py-0">
           <TelegramIcon width="64" height="64" className="hidden sm:inline" />
           <TelegramInnerIcon width="40" height="33" className="mx-auto sm:hidden" />
         </a>
