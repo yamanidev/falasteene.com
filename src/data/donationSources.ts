@@ -124,7 +124,7 @@ export const donationSources: DonationSource[] = [
       src: '/images/associations/mersal-logo.png',
       alt: 'Mersal foundation logo'
     },
-    donationLink: 'https://mersal-ngo.org/Donation',
+    donationLink: 'https://www.every.org/mersal',
     contactDetails: {
       website: 'https://mersal-ngo.org/',
       facebook: 'https://web.facebook.com/Mersalfoundation',
