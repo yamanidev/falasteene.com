@@ -76,15 +76,6 @@ export const telegramChannels: TelegramChannel[] = [
     channelLink: "https://t.me/mumenjmmeqdad"
   },
   {
-    name: "AlmedanTelegram_عاجل الميدان الان",
-    description: "",
-    logo: {
-      src: "/images/telegram-channels/almedan-telegram.jpg",
-      alt: "almedan channel logo"
-    },
-    channelLink: "https://t.me/AlmedanTelegram1"
-  },
-  {
     name: "شبكة قدس الإخبارية",
     description: "شبكة إعلامية فلسطينية مستقلة ترسم صورة فلسطين الكاملة",
     logo: {
@@ -148,14 +139,5 @@ export const telegramChannels: TelegramChannel[] = [
       alt: "days of palestine channel logo"
     },
     channelLink: "https://t.me/ramallahmix1"
-  },
-  {
-    name: "نابلس الحدث",
-    description: "",
-    logo: {
-      src: "/images/telegram-channels/nabluss.jpg",
-      alt: "nabluss channel logo"
-    },
-    channelLink: "https://t.me/nablussss_1"
   }
 ];
