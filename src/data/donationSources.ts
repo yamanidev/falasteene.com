@@ -103,7 +103,7 @@ export const donationSources: DonationSource[] = [
       src: '/images/associations/dar-quraan-sunnah-logo.png',
       alt: 'Dar Quraan and Sunnah association logo'
     },
-    donationLink: 'https://dkvsturkiye.ensany.com/campaign/6442',
+    donationLink: 'https://dkvsturkiye.ensany.com/campaign/6531',
     contactDetails: {
       website: 'https://dkvsturkiye.ensany.com/',
       facebook: 'https://web.facebook.com/DQWS.TURKEY',
