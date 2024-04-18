@@ -44,7 +44,7 @@ A curated list of associations and campaigns that provide aid to Palestinian fam
 ### Egypt
 
 - Mersal
-  - [Campaign donation link](https://mersal-ngo.org/Donation)
+  - [Campaign donation link](https://www.every.org/mersal)
   - [Website](https://mersal-ngo.org/)
   - [Facebook](https://web.facebook.com/Mersalfoundation)
   - [Instagram](https://www.instagram.com/mersal_foundation/)
