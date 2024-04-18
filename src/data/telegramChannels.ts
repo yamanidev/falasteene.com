@@ -141,6 +141,15 @@ export const telegramChannels: TelegramChannel[] = [
     channelLink: "https://t.me/DaysOfPal"
   },
   {
+    name: "Ramallah Mix - رام الله مكس",
+    description: "موقع رام الله مكس الرسمي www.rmix.ps",
+    logo: {
+      src: "/images/telegram-channels/ramallah-mix.jpg",
+      alt: "days of palestine channel logo"
+    },
+    channelLink: "https://t.me/ramallahmix1"
+  },
+  {
     name: "نابلس الحدث",
     description: "",
     logo: {
