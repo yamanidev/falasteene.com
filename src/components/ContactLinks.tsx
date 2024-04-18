@@ -1,8 +1,8 @@
-import type { ContactDetails } from '../types';
-import GlobeIcon from './icons/GlobeIcon';
-import InstagramIcon from './icons/InstagramIcon';
-import PhoneIcon from './icons/PhoneIcon';
-import WhatsAppIcon from './icons/WhatsAppIcon';
+import type { ContactDetails } from "../types";
+import GlobeIcon from "./icons/GlobeIcon";
+import InstagramIcon from "./icons/InstagramIcon";
+import PhoneIcon from "./icons/PhoneIcon";
+import WhatsAppIcon from "./icons/WhatsAppIcon";
 
 function ContactLinks({ details, className }: { details: ContactDetails; className?: string }) {
   return (

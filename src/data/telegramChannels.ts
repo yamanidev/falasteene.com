@@ -1,152 +1,152 @@
-import type { TelegramChannel } from '../types';
+import type { TelegramChannel } from "../types";
 
 export const telegramChannels: TelegramChannel[] = [
   {
-    name: 'أخبار القدس من القسطل | شارك معنا',
+    name: "أخبار القدس من القسطل | شارك معنا",
     description:
-      'المجموعة مخصصة لإضافة الصور والفيديوهات المتعلقة بالقدس، من تصويركم، أو الموثوقة التي وصلتكم من أشخاص موثوقين لديكم..',
+      "المجموعة مخصصة لإضافة الصور والفيديوهات المتعلقة بالقدس، من تصويركم، أو الموثوقة التي وصلتكم من أشخاص موثوقين لديكم..",
     logo: {
-      src: '/images/telegram-channels/qastal-news.jpg',
-      alt: 'qastal news channel logo'
+      src: "/images/telegram-channels/qastal-news.jpg",
+      alt: "qastal news channel logo"
     },
-    channelLink: 'https://t.me/QastalNews'
+    channelLink: "https://t.me/QastalNews"
   },
   {
-    name: 'غزة الآن - Gaza Now',
+    name: "غزة الآن - Gaza Now",
     description:
-      'المجموعة مخصصة لإضافة الصور والفيديوهات المتعلقة بالقدس، من تصويركم، أو الموثوقة التي وصلتكم من أشخاص موثوقين لديكم..',
+      "المجموعة مخصصة لإضافة الصور والفيديوهات المتعلقة بالقدس، من تصويركم، أو الموثوقة التي وصلتكم من أشخاص موثوقين لديكم..",
     logo: {
-      src: '/images/telegram-channels/gaza-now.jpg',
-      alt: 'gaza now channel logo'
+      src: "/images/telegram-channels/gaza-now.jpg",
+      alt: "gaza now channel logo"
     },
-    channelLink: 'https://t.me/gazaalannet'
+    channelLink: "https://t.me/gazaalannet"
   },
   {
-    name: 'القسطل الاخباري | القدس',
-    description: 'للمشاركة معنا والتعليق وإرسال أخبار منطقتك انضم لمجموعتنا',
+    name: "القسطل الاخباري | القدس",
+    description: "للمشاركة معنا والتعليق وإرسال أخبار منطقتك انضم لمجموعتنا",
     logo: {
-      src: '/images/telegram-channels/qastal-news-channel.jpg',
-      alt: 'qastal news channel logo'
+      src: "/images/telegram-channels/qastal-news-channel.jpg",
+      alt: "qastal news channel logo"
     },
-    channelLink: 'https://t.me/AlQastalps'
+    channelLink: "https://t.me/AlQastalps"
   },
   {
-    name: 'وكالة سند للأنباء',
-    description: 'وكالة سند للأنباء - الخبر للجميع',
+    name: "وكالة سند للأنباء",
+    description: "وكالة سند للأنباء - الخبر للجميع",
     logo: {
-      src: '/images/telegram-channels/sdn-news-sa.jpg',
-      alt: 'sdn news channel logo'
+      src: "/images/telegram-channels/sdn-news-sa.jpg",
+      alt: "sdn news channel logo"
     },
-    channelLink: 'https://t.me/sndnewsa'
+    channelLink: "https://t.me/sndnewsa"
   },
   {
-    name: 'وكالة شهاب',
-    description: '',
+    name: "وكالة شهاب",
+    description: "",
     logo: {
-      src: '/images/telegram-channels/shehab-telegram.jpg',
-      alt: 'shehab channel logo'
+      src: "/images/telegram-channels/shehab-telegram.jpg",
+      alt: "shehab channel logo"
     },
-    channelLink: 'https://t.me/ShehabTelegram'
+    channelLink: "https://t.me/ShehabTelegram"
   },
   {
-    name: 'وكالة شهاب | عاجل',
-    description: 'وكالة شهاب للأنباء تغطي الأحداث في فلسطين والعالم',
+    name: "وكالة شهاب | عاجل",
+    description: "وكالة شهاب للأنباء تغطي الأحداث في فلسطين والعالم",
     logo: {
-      src: '/images/telegram-channels/shehab-telegram2.jpg',
-      alt: 'shehab 2 channel logo'
+      src: "/images/telegram-channels/shehab-telegram2.jpg",
+      alt: "shehab 2 channel logo"
     },
-    channelLink: 'https://t.me/ShehabTelegram2'
+    channelLink: "https://t.me/ShehabTelegram2"
   },
   {
-    name: 'محمود الشريف',
-    description: '',
+    name: "محمود الشريف",
+    description: "",
     logo: {
-      src: '/images/telegram-channels/elshareef-mahmoud.jpg',
-      alt: 'elshareef mahmoud channel logo'
+      src: "/images/telegram-channels/elshareef-mahmoud.jpg",
+      alt: "elshareef mahmoud channel logo"
     },
-    channelLink: 'https://t.me/Elshareef_mahmoud'
+    channelLink: "https://t.me/Elshareef_mahmoud"
   },
   {
-    name: 'مؤمن مقداد',
-    description: 'أتشرف بمتابعتكم جميعا',
+    name: "مؤمن مقداد",
+    description: "أتشرف بمتابعتكم جميعا",
     logo: {
-      src: '/images/telegram-channels/mumen-meqdad.jpg',
-      alt: 'mumen meqdad channel logo'
+      src: "/images/telegram-channels/mumen-meqdad.jpg",
+      alt: "mumen meqdad channel logo"
     },
-    channelLink: 'https://t.me/mumenjmmeqdad'
+    channelLink: "https://t.me/mumenjmmeqdad"
   },
   {
-    name: 'AlmedanTelegram_عاجل الميدان الان',
-    description: '',
+    name: "AlmedanTelegram_عاجل الميدان الان",
+    description: "",
     logo: {
-      src: '/images/telegram-channels/almedan-telegram.jpg',
-      alt: 'almedan channel logo'
+      src: "/images/telegram-channels/almedan-telegram.jpg",
+      alt: "almedan channel logo"
     },
-    channelLink: 'https://t.me/AlmedanTelegram1'
+    channelLink: "https://t.me/AlmedanTelegram1"
   },
   {
-    name: 'شبكة قدس الإخبارية',
-    description: 'شبكة إعلامية فلسطينية مستقلة ترسم صورة فلسطين الكاملة',
+    name: "شبكة قدس الإخبارية",
+    description: "شبكة إعلامية فلسطينية مستقلة ترسم صورة فلسطين الكاملة",
     logo: {
-      src: '/images/telegram-channels/quds-news.jpg',
-      alt: 'quds news channel logo'
+      src: "/images/telegram-channels/quds-news.jpg",
+      alt: "quds news channel logo"
     },
-    channelLink: 'https://t.me/QudsN'
+    channelLink: "https://t.me/QudsN"
   },
   {
-    name: 'المصور الصحفي حازم مزيد',
-    description: 'اقدم افضل محتوى في أحداث فلسطين',
+    name: "المصور الصحفي حازم مزيد",
+    description: "اقدم افضل محتوى في أحداث فلسطين",
     logo: {
-      src: '/images/telegram-channels/hazem-ezyed.jpg',
-      alt: 'hazem ezyed channel logo'
+      src: "/images/telegram-channels/hazem-ezyed.jpg",
+      alt: "hazem ezyed channel logo"
     },
-    channelLink: 'https://t.me/hazemmezyed'
+    channelLink: "https://t.me/hazemmezyed"
   },
   {
-    name: 'إذاعة الأقصى 106.7 FM',
+    name: "إذاعة الأقصى 106.7 FM",
     description: `القناة الرسمية لاذاعة صوت الأقصى 🎤
 تسمعها ولا تراها .. قريبة من القلب بعيدة عن العين ..تعطيك كل ما تحتاجه وتبقى معك على الدوام`,
     logo: {
-      src: '/images/telegram-channels/alaqsa-voice.jpg',
-      alt: 'alaqsa voice channel logo'
+      src: "/images/telegram-channels/alaqsa-voice.jpg",
+      alt: "alaqsa voice channel logo"
     },
-    channelLink: 'https://t.me/Alaqsa_voice'
+    channelLink: "https://t.me/Alaqsa_voice"
   },
   {
-    name: 'شبكة معراج',
-    description: '',
+    name: "شبكة معراج",
+    description: "",
     logo: {
-      src: '/images/telegram-channels/m3raj-net.jpg',
-      alt: 'miraj network channel logo'
+      src: "/images/telegram-channels/m3raj-net.jpg",
+      alt: "miraj network channel logo"
     },
-    channelLink: 'https://t.me/m3rajNet'
+    channelLink: "https://t.me/m3rajNet"
   },
   {
-    name: 'قدس ميديا',
+    name: "قدس ميديا",
     description: `تغطية أحداث فلسطين .. صورة وحكاية
 للتواصل عبر البوت @Qudsnbot`,
     logo: {
-      src: '/images/telegram-channels/quds-media.jpg',
-      alt: 'quds media channel logo'
+      src: "/images/telegram-channels/quds-media.jpg",
+      alt: "quds media channel logo"
     },
-    channelLink: 'https://t.me/QudsnMedia'
+    channelLink: "https://t.me/QudsnMedia"
   },
   {
-    name: 'Days Of Palestine',
-    description: 'minute-by-minute in touch with what happens in Palestine.',
+    name: "Days Of Palestine",
+    description: "minute-by-minute in touch with what happens in Palestine.",
     logo: {
-      src: '/images/telegram-channels/days-of-palestine.jpg',
-      alt: 'days of palestine channel logo'
+      src: "/images/telegram-channels/days-of-palestine.jpg",
+      alt: "days of palestine channel logo"
     },
-    channelLink: 'https://t.me/DaysOfPal'
+    channelLink: "https://t.me/DaysOfPal"
   },
   {
-    name: 'نابلس الحدث',
-    description: '',
+    name: "نابلس الحدث",
+    description: "",
     logo: {
-      src: '/images/telegram-channels/nabluss.jpg',
-      alt: 'nabluss channel logo'
+      src: "/images/telegram-channels/nabluss.jpg",
+      alt: "nabluss channel logo"
     },
-    channelLink: 'https://t.me/nablussss_1'
+    channelLink: "https://t.me/nablussss_1"
   }
 ];

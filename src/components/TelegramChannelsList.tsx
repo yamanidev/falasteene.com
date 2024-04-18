@@ -1,5 +1,5 @@
-import { telegramChannels } from '../data/telegramChannels';
-import TelegramChannelCard from './TelegramChannelCard';
+import { telegramChannels } from "../data/telegramChannels";
+import TelegramChannelCard from "./TelegramChannelCard";
 
 function TelegramChannelsList() {
   return (

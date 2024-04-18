@@ -1,5 +1,5 @@
-import { donationSources } from '../data/donationSources';
-import DonationSourceCard from './DonationSourceCard';
+import { donationSources } from "../data/donationSources";
+import DonationSourceCard from "./DonationSourceCard";
 
 function DonationSourcesList({ className }: { className?: string }) {
   return (

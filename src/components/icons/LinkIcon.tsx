@@ -1,6 +1,6 @@
 function LinkIcon({
-  width = '14',
-  height = '7',
+  width = "14",
+  height = "7",
   className
 }: {
   width?: string;

@@ -1,6 +1,6 @@
 function TelegramInnerIcon({
-  width = '30',
-  height = '25',
+  width = "30",
+  height = "25",
   className
 }: {
   width?: string;

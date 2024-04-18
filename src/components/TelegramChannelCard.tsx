@@ -1,9 +1,9 @@
-import type { MouseEventHandler } from 'react';
-import useCopyToClipboard from '../hooks/useCopyToClipboard';
-import type { TelegramChannel } from '../types';
-import LinkIcon from './icons/LinkIcon';
-import TelegramIcon from './icons/TelegramIcon';
-import TelegramInnerIcon from './icons/TelegramInnerIcon';
+import type { MouseEventHandler } from "react";
+import useCopyToClipboard from "../hooks/useCopyToClipboard";
+import type { TelegramChannel } from "../types";
+import LinkIcon from "./icons/LinkIcon";
+import TelegramIcon from "./icons/TelegramIcon";
+import TelegramInnerIcon from "./icons/TelegramInnerIcon";
 
 function TelegramChannelCard({ name, description, logo, channelLink }: TelegramChannel) {
   const [copyStatus, copy] = useCopyToClipboard(channelLink);
@@ -24,14 +24,14 @@ function TelegramChannelCard({ name, description, logo, channelLink }: TelegramC
               {name}
             </h2>
             <p className="mb-5 mt-2.5 text-sm font-light text-[#666]/80">
-              {description ? description : 'لا يوجد وصف للقناة.'}
+              {description ? description : "لا يوجد وصف للقناة."}
             </p>
             <button
               onClick={copy as MouseEventHandler<HTMLButtonElement>}
               className="mx-auto mt-auto flex items-center gap-1 text-sm font-medium text-telegram-blue sm:mx-0">
               <span className="underline" dir="ltr" lang="en">
-                {copyStatus === 'inactive' && 'Copy link'}
-                {copyStatus === 'copied' && 'Copied!'}
+                {copyStatus === "inactive" && "Copy link"}
+                {copyStatus === "copied" && "Copied!"}
               </span>
               <span className="inline-block h-1 w-1 rounded-full bg-telegram-blue"></span>
               <span>

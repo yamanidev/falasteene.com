@@ -1,10 +1,10 @@
-import type { DonationSource } from '../types';
-import ContactLinks from './ContactLinks';
-import PaymentInfoItem from './PaymentInfoItem';
-import AlgeriePosteIcon from './icons/AlgeriePosteIcon';
-import BankIcon from './icons/BankIcon';
-import InfoIcon from './icons/InfoIcon';
-import LocationIcon from './icons/LocationIcon';
+import type { DonationSource } from "../types";
+import ContactLinks from "./ContactLinks";
+import PaymentInfoItem from "./PaymentInfoItem";
+import AlgeriePosteIcon from "./icons/AlgeriePosteIcon";
+import BankIcon from "./icons/BankIcon";
+import InfoIcon from "./icons/InfoIcon";
+import LocationIcon from "./icons/LocationIcon";
 
 type Props = {
   details: DonationSource;
@@ -17,7 +17,7 @@ function DonationSourceCard({ details, className }: Props) {
       <header className="text-center">
         <h6
           className={`py-1.5 text-sm font-light text-anti-flash-white ${
-            details.local ? 'bg-palestine-green' : 'bg-[#1877F2]'
+            details.local ? "bg-palestine-green" : "bg-[#1877F2]"
           }`}>
           {details.local
             ? `من داخل الجزائر: ${details.wilaya}`
@@ -25,7 +25,7 @@ function DonationSourceCard({ details, className }: Props) {
         </h6>
         <h2 className="mt-4 hidden px-4 text-xl sm:block">{details.name}</h2>
       </header>
-      <div className={`mt-5 ${details.local ? 'pb-3' : 'sm:pb-3'}`}>
+      <div className={`mt-5 ${details.local ? "pb-3" : "sm:pb-3"}`}>
         <div className="flex w-full flex-col items-center gap-3 px-4 sm:flex-row sm:items-stretch">
           <div className="shrink-0">
             <img
@@ -57,7 +57,7 @@ function DonationSourceCard({ details, className }: Props) {
                 key={index}
                 text={method.accountNumber}
                 icon={
-                  method.label === 'CCP' ? (
+                  method.label === "CCP" ? (
                     <AlgeriePosteIcon className="h-3 w-2.5" />
                   ) : (
                     <BankIcon className="h-3 w-3" />
