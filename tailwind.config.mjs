@@ -9,7 +9,7 @@ export default {
         "palestine-red": "#EE2A35",
         "palestine-green": "#009736",
         "telegram-blue": "#2AABEE",
-        "facebook-blue": "#1877F2"
+        "facebook-blue": "#0866FF"
       },
       fontFamily: {
         alexandria: ["Alexandria", "sans-serif"]
