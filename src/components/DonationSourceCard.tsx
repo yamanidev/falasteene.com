@@ -30,6 +30,8 @@ function DonationSourceCard({ details, className }: Props) {
           <div className="shrink-0">
             <img
               src={details.logo.src}
+              width="112"
+              height="112"
               alt={details.logo.alt}
               className="mx-auto flex h-28 w-28 items-center justify-center object-contain sm:mx-0"
             />
@@ -38,7 +40,7 @@ function DonationSourceCard({ details, className }: Props) {
           <ul className="flex w-full flex-col gap-1.5 text-xs font-light text-[#817A99]">
             <li className="flex items-center gap-1 rounded-md bg-[#d9d9d9] px-4 py-1">
               <span className="rounded-sm bg-white/40 px-1 py-0.5">
-                <LocationIcon className="h-4 w-3" />
+                <LocationIcon width="12" height="16" />
               </span>
               {details.contactDetails.location.link ? (
                 <a
@@ -58,9 +60,9 @@ function DonationSourceCard({ details, className }: Props) {
                 text={method.accountNumber}
                 icon={
                   method.label === "CCP" ? (
-                    <AlgeriePosteIcon className="h-3 w-2.5" />
+                    <AlgeriePosteIcon width="10" height="12" />
                   ) : (
-                    <BankIcon className="h-3 w-3" />
+                    <BankIcon width="12" height="12" />
                   )
                 }
               />
@@ -76,7 +78,7 @@ function DonationSourceCard({ details, className }: Props) {
               target="_blank"
               className="hidden flex-col items-center justify-center rounded-md border border-palestine-green px-8 text-palestine-green transition hover:bg-palestine-green hover:text-white sm:flex">
               <span>
-                <InfoIcon className="h-6 w-6 text-xs font-normal" />
+                <InfoIcon width="24" height="24" />
               </span>
               <span>تبرع</span>
             </a>
@@ -92,7 +94,7 @@ function DonationSourceCard({ details, className }: Props) {
             target="_blank"
             className="mt-4 flex flex-col items-center justify-center rounded-md bg-palestine-green py-2 text-white sm:hidden">
             <span>
-              <InfoIcon className="h-6 w-6 text-xs font-normal" />
+              <InfoIcon width="24" height="24" />
             </span>
             <span>تبرع</span>
           </a>

@@ -1,8 +1,16 @@
-function BankIcon({ className }: { className?: string }) {
+function BankIcon({
+  width = "24",
+  height = "24",
+  className
+}: {
+  width?: string;
+  height?: string;
+  className?: string;
+}) {
   return (
     <svg
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 12 12"
       className={className}
       fill="none"

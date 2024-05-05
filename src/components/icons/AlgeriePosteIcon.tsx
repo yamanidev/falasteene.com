@@ -1,9 +1,17 @@
-function AlgeriePosteIcon({ className }: { className?: string }) {
+function AlgeriePosteIcon({
+  width = "1718",
+  height = "2050",
+  className
+}: {
+  width?: string;
+  height?: string;
+  className?: string;
+}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1718"
-      height="2050"
+      width={width}
+      height={height}
       viewBox="0 0 1718 2050"
       className={className}
       xmlSpace="preserve">
