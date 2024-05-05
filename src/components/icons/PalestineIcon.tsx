@@ -1,8 +1,16 @@
-function PalestineIcon({ className }: { className?: string }) {
+function PalestineIcon({
+  width = "139",
+  height = "372",
+  className
+}: {
+  width?: string;
+  height?: string;
+  className?: string;
+}) {
   return (
     <svg
-      width="139"
-      height="372"
+      width={width}
+      height={height}
       viewBox="0 0 139 372"
       fill="#009736"
       className={className}
