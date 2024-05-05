@@ -8,7 +8,8 @@ export default {
         "anti-flash-white": "#F1F1F1",
         "palestine-red": "#EE2A35",
         "palestine-green": "#009736",
-        "telegram-blue": "#2AABEE"
+        "telegram-blue": "#2AABEE",
+        "facebook-blue": "#1877F2"
       },
       fontFamily: {
         alexandria: ["Alexandria", "sans-serif"]

@@ -54,7 +54,7 @@ function ContactLinks({ details, className }: { details: ContactDetails; classNa
             href={details.facebook}
             rel="noreferrer"
             target="_blank"
-            className="inline-block rounded-md bg-[#1877F2] p-2">
+            className="bg-facebook-blue inline-block rounded-md p-2">
             <img src="/images/facebook-logo-white.png" alt="Facebook logo" className="w-3.5" />
           </a>
         </li>
