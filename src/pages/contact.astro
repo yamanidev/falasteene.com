@@ -1,0 +1,83 @@
+---
+import Meta from "../components/Meta.astro";
+import Navbar from "../components/Navbar.astro";
+import InstagramIcon from "../components/icons/InstagramIcon";
+import PalestineIcon from "../components/icons/PalestineIcon";
+import TelegramInnerIcon from "../components/icons/TelegramInnerIcon";
+import UpsideDownTriangleIcon from "../components/icons/UpsideDownTriangleIcon";
+import XLogo from "../components/icons/XLogo";
+import "../styles/global.css";
+---
+
+<html lang="ar" dir="rtl">
+  <Meta />
+  <body class="bg-ghost-white font-alexandria">
+    <Navbar />
+    <main>
+      <section class="min-h-[calc(100dvh-136px)] overflow-hidden px-4 py-12 sm:py-16">
+        <div class="relative mx-auto max-w-[43.75rem] text-center">
+          <PalestineIcon
+            width="222"
+            height="593"
+            className="absolute -left-16 -top-10 -z-10 text-anti-flash-white"
+          />
+          <UpsideDownTriangleIcon width="47" height="47" className="mx-auto" />
+          <h1
+            class="mt-1 text-2xl font-semibold sm:text-4xl sm:leading-relaxed md:text-4xl md:leading-relaxed lg:text-5xl">
+            تواصل معنا
+          </h1>
+          <p class="my-4 font-light sm:text-xl lg:my-8">
+            نحن هنا للمساعدة. سواء كان لديك سؤال، تعليق، أو ترغب في اقتراح شيء جديد، سنكون سعداء
+            بالاستماع إليك وسنرد إليك في أقرب وقت ممكن.
+          </p>
+          <div class="flex justify-center gap-2 sm:gap-8">
+            <a
+              href="https://telegram.org/"
+              target="_blank"
+              rel="noreferrer"
+              class="flex h-16 w-16 items-center justify-center rounded-xl bg-telegram-blue text-white sm:h-20 sm:w-20">
+              <TelegramInnerIcon width="39" height="33" />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noreferrer"
+              class="flex h-16 w-16 items-center justify-center rounded-xl bg-black text-white sm:h-20 sm:w-20">
+              <XLogo width="34" height="34" className="h-8 w-8 sm:h-auto sm:w-auto" />
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+              class="flex h-16 w-16 items-center justify-center rounded-xl bg-[linear-gradient(315deg,#FBE18A_0.96%,#FCBB45_21.96%,#F75274_38.96%,#D53692_52.96%,#8F39CE_74.96%,#5B4FE9_100.96%)] sm:h-20
+              sm:w-20">
+              <InstagramIcon width="42" height="42" className="h-8 w-8 sm:h-auto sm:w-auto" />
+            </a>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noreferrer"
+              class="flex h-16 w-16 items-center justify-center rounded-xl bg-[#0866FF] sm:h-20 sm:w-20">
+              <img
+                src="/images/facebook-logo.png"
+                width="48"
+                height="48"
+                alt="Facebook logo"
+                loading="eager"
+                class="relative bottom-1 h-8 w-8 sm:h-12 sm:w-12"
+              />
+            </a>
+          </div>
+          <p class="mt-8 font-light text-[#858585]">
+            هل ترغب في التحدث مع شخص مباشرة؟ لا تتردد في التواصل معنا عن طريق إرسال بريد إلكتروني
+            على <a
+              href="mailto:contact@falasteene.com"
+              class="inline font-bold text-palestine-green">
+              contact@falasteene.com
+            </a> نحن هنا لمساعدتك.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
