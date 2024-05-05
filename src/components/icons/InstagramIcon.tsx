@@ -3,8 +3,8 @@ function InstagramIcon({
   height = "24",
   className
 }: {
-  width: string;
-  height: string;
+  width?: string;
+  height?: string;
   className?: string;
 }) {
   return (
