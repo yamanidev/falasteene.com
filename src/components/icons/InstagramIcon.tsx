@@ -1,9 +1,17 @@
-function InstagramIcon({ className }: { className?: string }) {
+function InstagramIcon({
+  width = "24",
+  height = "24",
+  className
+}: {
+  width: string;
+  height: string;
+  className?: string;
+}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 1000 1000"
       className={className}>
       <title>Instagram logo</title>
