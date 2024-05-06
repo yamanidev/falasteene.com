@@ -8,10 +8,29 @@
 
   <meta
     name="description"
-    content="قدّم دعمك للشعب الفلسطيني من خلال موقعنا الذي يوفر روابط للتبرع. ساهم في توفير المساعدة والإغاثة للمحتاجين في فلسطين. قم بالتبرع الآن وكن جزءًا من تحقيق الأمل والتغيير، من خلال بناء جسور الخير والإحسان. المؤمن للمؤمن كالبنيان يشد بعضه بعضًا.
-  "
+    content="قدّم دعمك للشعب الفلسطيني من خلال موقعنا الذي يوفر روابط للتبرع. ساهم في توفير المساعدة والإغاثة للمحتاجين في فلسطين. قم بالتبرع الآن وكن جزءًا من تحقيق الأمل والتغيير، من خلال بناء جسور الخير والإحسان. المؤمن للمؤمن كالبنيان يشد بعضه بعضًا."
   />
-  <meta property="og:image" content="/preview.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:image" content={new URL("/preview.png", Astro.url)} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={Astro.url} />
+  <meta property="og:title" content="Falasteene" />
+  <meta
+    property="og:description"
+    content="قدّم دعمك للشعب الفلسطيني من خلال موقعنا الذي يوفر روابط للتبرع. ساهم في توفير المساعدة والإغاثة للمحتاجين في فلسطين. قم بالتبرع الآن وكن جزءًا من تحقيق الأمل والتغيير، من خلال بناء جسور الخير والإحسان. المؤمن للمؤمن كالبنيان يشد بعضه بعضًا."
+  />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content={Astro.url} />
+  <meta property="twitter:title" content="Falasteene" />
+  <meta
+    property="twitter:description"
+    content="قدّم دعمك للشعب الفلسطيني من خلال موقعنا الذي يوفر روابط للتبرع. ساهم في توفير المساعدة والإغاثة للمحتاجين في فلسطين. قم بالتبرع الآن وكن جزءًا من تحقيق الأمل والتغيير، من خلال بناء جسور الخير والإحسان. المؤمن للمؤمن كالبنيان يشد بعضه بعضًا."
+  />
+  <meta property="twitter:image" content={new URL("/preview.png", Astro.url)} />
+
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
